@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background: rgb(174, 202, 238);
+    background: radial-gradient(circle, rgba(174, 202, 238, 1) 0%, rgba(11, 75, 156, 1) 33%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.divLogo h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 6px 2px 7px #000;
+}
+
+.divLogo h1::before {
+    content: "✔";
+    margin-right: 5px;
+}
+
+.links a,
+.login a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.follow {
+    width: 160px;
+    font-size: 17px;
+    height: 55px;
+    border: none;
+    border-radius: 22px;
+    color: #fff;
+    background: #000;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+}
+
+.follow:hover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 190px;
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+.follow:hover img {
+    display: block;
+}
+
+.login button img {
+    display: none;
+    width: 50px;
+    margin-right: 8px;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 70px;
+    width: 56%;
+    display: block;
+    margin: 120px auto 0 auto;
+    line-height: 115px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+section p {
+    text-align: center;
+    font-size: 30px;
+    width: 45%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.form {
+    background: #fff;
+    width: 730px;
+    display: block;
+    margin: 0 auto;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.form form {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 38px;
+    margin-top: 50px;
+}
+
+.form .email {
+    font-size: 18px;
+    margin-left: 15px;
+    background: transparent;
+    border: none;
+    display: flex;
+    padding-top: 16px;
+    outline: none;
+    font-weight: 600;
+}
+
+.form .submit {
+    width: 200px;
+    font-size: 16px;
+    border: none;
+    height: 53px;
+    margin-top: 12px;
+    margin-right: 14px;
+    padding-left: 10px;
+    background: #000;
+    font-weight: 600;
+    border-radius: 28px;
+    text-align: center;
+}
+
+.form .submit::placeholder {
+    color: #fff;
+}
